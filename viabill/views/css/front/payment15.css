@@ -1,0 +1,21 @@
+/**
+* NOTICE OF LICENSE
+*
+* @author    Written for or by ViaBill
+* @copyright Copyright (c) Viabill
+* @license   Addons PrestaShop license limitation
+* @see       /LICENSE
+*
+*
+*/
+
+div.payment_module {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+div.payment_module .price-tag-global-container {
+    position: absolute;
+    left: 90px;
+    top: 40px;
+}

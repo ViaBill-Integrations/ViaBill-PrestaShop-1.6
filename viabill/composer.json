@@ -1,0 +1,47 @@
+{
+  "name": "viabill",
+  "config": {
+    "prepend-autoloader": false,
+    "platform": {
+      "php": "5.3.29"
+    }
+  },
+  "type": "prestashop-module",
+  "authors": [
+    {
+      "name": "Written for or by ViaBill",
+      "email": "tech@viabill.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ViaBill\\": "src/"
+    },
+    "classmap": [
+      "src/Entity"
+    ]
+  },
+  "require": {
+    "symfony/serializer": "^2.8",
+    "symfony/property-access": "^2.8",
+    "symfony/http-foundation": "^2.8",
+    "guzzlehttp/guzzle": "^3.8.1",
+    "symfony/config": "^2.8",
+    "symfony/dependency-injection": "^2.8",
+    "symfony/filesystem": "^2.8",
+    "symfony/yaml": "^2.8",
+    "monolog/monolog": "~1.8"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.9.1",
+    "phpunit/phpunit": "^4.8"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php -r \"copy('config/pre-commit', '.git/hooks/pre-commit');\""
+    ],
+    "post-update-cmd": [
+      "php -r \"copy('config/pre-commit', '.git/hooks/pre-commit');\""
+    ]
+  }
+}

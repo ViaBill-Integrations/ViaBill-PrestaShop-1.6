@@ -1,0 +1,84 @@
+/**
+* NOTICE OF LICENSE
+*
+* @author    Written for or by ViaBill
+* @copyright Copyright (c) Viabill
+* @license   Addons PrestaShop license limitation
+* @see       /LICENSE
+*
+*
+*/
+
+#content .alert.alert-info {
+    border: none;
+    border-left-color: currentcolor;
+    border-left-style: none;
+    border-left-width: medium;
+    padding-left: 10px;
+    border-left: solid 3px #4ac7e0;
+    margin-bottom: 0;
+    font: 400 12px/1.42857 "Open Sans",Helvetica,Arial,sans-serif;
+    margin-left: 0;
+    color: #1e94ab;
+    background-color: #DCF4F9;
+}
+
+.myviabill-button {
+    color: #363A41;
+    background-color: #fff;
+    border-color: #DEDEDE;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid #DEDEDE;
+    white-space: nowrap;
+    padding: 6px 8px;
+    font-size: 12px;
+    line-height: 1.42857;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.myviabill-button:hover {
+    color: #fff;
+    background-color: #00aff0;
+    border-color: #008abd;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.myviabill-button.disabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+#conf_id_VB_CAPTURE_ORDER_STATUS_MULTI.chzn-container-multi,
+#conf_id_VB_CAPTURE_ORDER_STATUS_MULTI .chzn-container-multi .search-field > input {
+    width: 100% !important;
+}
+
+#conf_id_VB_CAPTURE_ORDER_STATUS_MULTI .chzn-container-multi .chzn-choices .search-choice {
+    line-height: 14px;
+    margin: 6px 5px 0;
+    box-sizing: border-box;
+    width: calc(100% - 10px);
+}
+
+#conf_id_VB_CAPTURE_ORDER_STATUS_MULTI .searchable-multiselect option.selected {
+    color: #397c33;
+    font-weight: 900;
+}
+
+.fixed-width-xxl {
+    width: 250px !important;
+}

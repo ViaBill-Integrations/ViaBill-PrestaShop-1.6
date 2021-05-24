@@ -1,0 +1,131 @@
+/**
+* NOTICE OF LICENSE
+*
+* @author    Written for or by ViaBill
+* @copyright Copyright (c) Viabill
+* @license   Addons PrestaShop license limitation
+* @see       /LICENSE
+*
+*
+*/
+
+/*Authentication*/
+
+.authentication-container {
+    width: 50%;
+    margin: 20px auto 0;
+    background-color: #fafafb;
+}
+
+#button.authentication-button {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 1.42857;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+#button.authentication-button.btn-primary {
+    background-color: #00aff0;
+    color: #fff;
+    border-color: #2eacce;
+}
+
+#button.authentication-button.btn-primary:hover {
+    background-color: #008abd;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#button.authentication-button.btn-secondary {
+    border: 1px solid #797979;
+    background-color: #fff;
+}
+
+#button.authentication-button.btn-secondary:hover {
+    background-color: #f2f1f0;
+}
+
+#content .alert.alert-info {
+    border: none;
+    border-left-color: currentcolor;
+    border-left-style: none;
+    border-left-width: medium;
+    padding-left: 10px;
+    border-left: solid 3px #4ac7e0;
+    margin-bottom: 0;
+    font: 400 12px/1.42857 "Open Sans",Helvetica,Arial,sans-serif;
+    margin-left: 0;
+    color: #1e94ab;
+    background-color: #DCF4F9;
+}
+
+.margin-form:first-child {
+    padding-left: 0;
+}
+
+.margin-form input,
+.margin-form select{
+    padding: 6px 8px;
+    font-size: 12px;
+    width: 200px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #F5F8F9;
+    background-image: none;
+    border: 1px solid #C7D6DB;
+    border-radius: 3px;
+    -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+    position: relative;
+    top: -5px;
+}
+
+.margin-form select {
+    width: 218px;
+}
+
+.margin-form input:focus,
+.margin-form select:focus{
+    background-color: #FEFBE2;
+    box-shadow: none;
+    border-color: #66afe9;
+    outline: 0;
+}
+
+.margin-form .terms-and-conditions-checkbox {
+    width: auto;
+}
+
+.terms-and-conditions-container .terms-and-conditions-checkbox {
+    top: -1px;
+}
+
+.terms-and-conditions-error.hidden {
+    display: none;
+}
+
+.terms-and-conditions-text .terms-and-conditions-link {
+    color: #0077a4;
+}
+
+.terms-and-conditions-text .terms-and-conditions-link:hover {
+    text-decoration: underline;
+}

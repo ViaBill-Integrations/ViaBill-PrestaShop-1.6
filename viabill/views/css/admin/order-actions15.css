@@ -1,0 +1,26 @@
+/**
+* NOTICE OF LICENSE
+*
+* @author    Written for or by ViaBill
+* @copyright Copyright (c) Viabill
+* @license   Addons PrestaShop license limitation
+* @see       /LICENSE
+*
+*
+*/
+
+.input-group-addon {
+    display: inline-block;
+}
+
+.form-inline {
+    margin-top: 10px;
+}
+
+button[name="capturePayment"] {
+    margin: 10px 0 15px;
+}
+
+.return-action-container {
+    margin: 10px 0 15px;
+}

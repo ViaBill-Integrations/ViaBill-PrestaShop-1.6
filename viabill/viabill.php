@@ -10,7 +10,6 @@
 *
 */
 
-use ViaBill\Util\DebugLog;
 
 /**
  * Class ViaBill
@@ -702,7 +701,7 @@ class ViaBill extends PaymentModule
         }
 
         $debug_str = var_export($order, true);
-        DebugLog::msg("hookActionOrderHistoryAddAfter / validation accepted for order: ".$debug_str);
+        ViaBill\Util\DebugLog::msg("hookActionOrderHistoryAddAfter / validation accepted for order: ".$debug_str);
 
         $newOrderStatusId = (int) $orderHistory->id_order_state;
         $viaBillPaymentCompletedOrderStatus = (int) Configuration::get(
@@ -996,20 +995,20 @@ class ViaBill extends PaymentModule
         /** @var \ViaBill\Service\Provider\OrderStatusProvider $orderStatus */
         $orderStatus = $this->getContainer()->get('service.provider.orderStatus');
 
-        DebugLog::msg("capturePayment / called");
+        ViaBill\Util\DebugLog::msg("capturePayment / called");
         $debug_str = 'Memory Usage:'.memory_get_usage()." Peak Usage: ".memory_get_peak_usage();
-        DebugLog::msg($debug_str);
+        ViaBill\Util\DebugLog::msg($debug_str);
 
         if (!$orderStatus->canBeCaptured($order)) {
-            DebugLog::msg("capturePayment / Order cannot be captured:");
+            ViaBill\Util\DebugLog::msg("capturePayment / Order cannot be captured:");
             $debug_str = var_export($order, true);
-            DebugLog::msg($debug_str);
+            ViaBill\Util\DebugLog::msg($debug_str);
             return false;
         }
 
         $remainingToCapture = $orderStatus->getRemainingToCapture($order);
 
-        DebugLog::msg("capturePayment / remaining to capture: $remainingToCapture");
+        ViaBill\Util\DebugLog::msg("capturePayment / remaining to capture: $remainingToCapture");
 
         /** @var \ViaBill\Service\Handler\PaymentManagementHandler $paymentHandler */
         /** @var \ViaBill\Service\MessageService $messageService */
@@ -1030,7 +1029,7 @@ class ViaBill extends PaymentModule
         $confirmations = array();
 
         if (empty($errors) && $handleResponse->getSuccessMessage()) {
-            DebugLog::msg("capturePayment / success: ".$handleResponse->getSuccessMessage());
+            ViaBill\Util\DebugLog::msg("capturePayment / success: ".$handleResponse->getSuccessMessage());
             $confirmations[] = $handleResponse->getSuccessMessage();
         }
 
